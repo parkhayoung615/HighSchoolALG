@@ -118,6 +118,6 @@ footer {
     text-align: left;
 }
 
-.footer-item {
+.footer-item, .teacher, .footer-sns-item {
     font-size: 14px;
 }
