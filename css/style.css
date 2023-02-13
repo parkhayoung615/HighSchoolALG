@@ -41,6 +41,7 @@
 #wrap {
     width: 100%;
     position: relative;
+    margin-top: 60px;
 }
 
 /* header 영역 */
@@ -50,6 +51,8 @@ header {
     top: 0;
     width: 100%;
     font-size: 14px;
+    background-color: white;
+    z-index: 9999999999;
 }
 
 .header-wrap {
@@ -120,4 +123,121 @@ footer {
 
 .footer-item, .teacher, .footer-sns-item {
     font-size: 14px;
+}
+
+/* footer 영역 끝 */
+
+
+
+
+/* section three */
+
+.three {
+    position: relative;
+    background-color: rgb(9, 15, 24);
+}
+
+.three-wrap .title {
+    position: absolute;
+    top: -15%;
+    left: 20%;
+    z-index: 22;
+}
+
+.three-wrap .title .sub-tit {
+    font-size: 28px;
+    font-family: 'Noto Bs';
+    color: #3182f6;
+    margin-bottom: 15px;
+}
+
+.three-wrap .title .tit {
+    font-size: 50px;
+    font-family: 'Noto M';
+    color: #fff;
+    line-height: 1.2;
+}
+
+:root {
+    --background-dark: #2d3548;
+    --text-light: rgba(255, 255, 255, 0.6);
+    --text-lighter: rgba(255, 255, 255, 0.9);
+    --spacing-s: 8px;
+    --spacing-m: 16px;
+    --spacing-l: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 64px;
+}
+
+.hero-section {
+    align-items: flex-start;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+}
+
+.card-grid {
+    display: flex;
+    margin-top: 8%;
+}
+
+.card {
+    list-style: none;
+    position: relative;
+    width: 230px;
+    height: 300px;
+    margin: 35px;
+}
+
+.card:before {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.card-background {
+    background-size: cover;
+    background-position: center;
+    border-radius: var(--spacing-l);
+    bottom: 0;
+    filter: brightness(0.75) saturate(1.2) contrast(0.85);
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    transform: scale(1) translateZ(0);
+    transition:
+        filter 200ms linear,
+        transform 200ms linear;
+}
+
+.card:hover .card-background {
+    transform: scale(1.05) translateZ(0);
+}
+
+.card-grid:hover>.card:not(:hover) .card-background {
+    filter: brightness(0.5) saturate(0) contrast(1.2) blur(10px);
+}
+
+.card-content {
+    left: 0;
+    padding: var(--spacing-l);
+    position: absolute;
+    top: 0;
+}
+
+.card-category {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-s);
+    text-transform: uppercase;
+}
+
+.card-heading {
+    color: var(--text-lighter);
+    font-size: 20px;
+    text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    line-height: 1.4;
 }
