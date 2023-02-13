@@ -88,12 +88,14 @@ header {
 /* footer 영역 */
 
 footer {
-    height: 100px;
+    height: 100%;
     width: 100%;
 }
 
 .footer-wrap {
     width: 70%;
+    padding-top: 30px;
+    padding-bottom: 50px;
     margin: 0 auto;
 }
 
@@ -117,12 +119,35 @@ footer {
 }
 
 .footer-two > li {
-    padding-left: 50px;
+    padding-left: 150px;
     text-align: left;
 }
 
-.footer-item, .teacher, .footer-sns-item {
-    font-size: 14px;
+.footer-item, .teacher, .footer-sns-item, .name {
+    font-size: 14;
+    font-family: 'Noto L';
+}
+
+.footer-sns-list {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-sns-item {
+    padding-right: 20px;
+}
+
+.footer-sns-item a i {
+    padding-top: 5px;
+    color: gray;
+    font-size: 20px;
+}
+
+
+.footer-sns-item a i:hover {
+    color: black;
 }
 
 /* footer 영역 끝 */
@@ -137,25 +162,26 @@ footer {
     background-color: rgb(9, 15, 24);
 }
 
+
 .three-wrap .title {
     position: absolute;
-    top: -15%;
-    left: 20%;
+    top: 10%;
+    left: 21%;
     z-index: 22;
 }
 
 .three-wrap .title .sub-tit {
-    font-size: 28px;
+    font-size: 20px;
     font-family: 'Noto Bs';
     color: #3182f6;
     margin-bottom: 15px;
 }
 
 .three-wrap .title .tit {
-    font-size: 50px;
-    font-family: 'Noto M';
+    font-size: 38px;
+    font-family: 'Noto Bs';
     color: #fff;
-    line-height: 1.2;
+    line-height: 0.7;
 }
 
 :root {
