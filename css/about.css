@@ -73,9 +73,15 @@
 
 /* section 2 */
 
-.about-section2, .about-section3 {
+.about-section2 {
+    padding-top: 100px;
     height: 600px;
     position: relative;
+}
+
+.about-section3 {
+    position: relative;
+    height: 900px;
 }
 
 .two {
