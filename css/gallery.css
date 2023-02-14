@@ -6,7 +6,7 @@
 .gallery-tit {
     position: relative;
     height: 200px;
-    width: 50%;
+    width: 60%;
 }
 
 .gallery-tit-wrap {
@@ -17,12 +17,9 @@
 }
 
 .tit {
+    font-family: 'Noto Bb';
     text-align: left;
-    font-size: 40px;
-}
-
-.sub-tit {
-    font-family: 'Noto M';
+    font-size: 42px;
 }
 
 .br > ul {
@@ -38,4 +35,16 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+span.sub-tit {
+    font-family: 'Noto T';
+    font-size: 12px;
+}
+
+div.sub-tit {
+    font-family: 'Noto M';
+    color: rgb(56, 56, 56);
+    font-size: 20px;
+    line-height: 0.8;
 }
