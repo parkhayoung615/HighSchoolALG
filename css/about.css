@@ -9,9 +9,16 @@
     font-size: 15px;
 }
 
+#wrap {
+    margin-top: 0;
+}
+
+header a {
+    color: rgb(230, 230, 230);
+}
+
 #main {
     color: white;
-    padding-top: 70px;
     width: 100%;
     background-color: black;
 }

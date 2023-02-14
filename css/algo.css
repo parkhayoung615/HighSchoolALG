@@ -17,6 +17,10 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
+header a {
+    color: rgb(230, 230, 230);
+}
+
 #termynal {
     font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
 }
@@ -63,7 +67,7 @@ body {
 }
 
 [data-termynal]:after {
-    content: 'First Problem'; /* 터미널 이름 */
+    content: 'First Problem : 다이어트'; /* 터미널 이름 */
     position: absolute;
     color: var(--color-text-subtle);
     top: 5px;
@@ -121,3 +125,127 @@ body {
         opacity: 0;
     }
 }
+
+
+
+[data-termynal2] {
+    width: 750px;
+    max-width: 40%;
+    background: var(--color-bg);
+    color: var(--color-text);
+    margin: 100px auto;
+    font-size: 15px;
+    font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
+    border-radius: 4px;
+    padding: 75px 45px 35px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+[data-termynal2]:before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    /* A little hack to display the window buttons in one pseudo element. */
+    background: #d9515d;
+    -webkit-box-shadow: 25px 0 0 #f4c025, 50px 0 0 #3ec930;
+    box-shadow: 25px 0 0 #f4c025, 50px 0 0 #3ec930;
+}
+
+[data-termynal2]:after {
+    content: 'Second Problem : 구름공방'; /* 터미널 이름 */
+    position: absolute;
+    color: var(--color-text-subtle);
+    top: 5px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+/* 커스텀 */
+
+/* 슬라이더 1 시작 */
+.slider-1 {
+    height: 1000px;
+    position:relative;
+}
+
+/* 슬라이더 1 - 페이지 버튼 */
+.slider-1 > .page-btns {
+    text-align:center;
+    position:absolute;
+    bottom:20px;
+    left:0;
+    width:100%;
+}
+
+.slider-1 > .page-btns > div {
+    width:20px;
+    height:20px;
+    background-color:rgba(255,255,255,.5);
+    border-radius:4px;
+    display:inline-block;
+    cursor:pointer;
+}
+
+.slider-1 > .page-btns > div.active {
+    background-color:rgba(255,255,255,1);
+}
+
+/* 슬라이더 1 - 슬라이드 */
+
+.slider-1 > .slides > div {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    opacity:0;
+    transition: opacity 0.3s;
+    background-position:center;
+    background-size:cover;
+    background-repeat:no-repeat;
+}
+
+.slider-1 > .slides > div.active {
+    opacity:1;
+}
+
+/* 슬라이더 좌우 버튼 */
+.slider-1 > .side-btns > div {
+    position:absolute;
+    top:0;
+    left:0;
+    width:25%;
+    height:100%;
+    cursor:pointer;
+}
+.slider-1 > .side-btns > div:last-child {
+    left:auto;
+    right:0;
+}
+.slider-1 >.side-btns > div > span {
+    position:absolute;
+    top:50%;
+    left:20px;
+    transform:translatey(-50%);
+    background-color:white;
+    opacity:0.5;
+    padding:1px 13px;
+    border-radius:50px;
+    font-size:25px;
+}
+.slider-1 >.side-btns > div:last-child > span {
+    left:auto;
+    right:20px;
+}
+
+/* 슬라이더 1 끝 */
