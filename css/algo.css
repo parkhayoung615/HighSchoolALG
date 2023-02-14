@@ -1,25 +1,31 @@
-/**
- * termynal.js
- *
- * @author Ines Montani <ines@ines.io>
- * @version 0.0.1
- * @license MIT
- */
- body {
-    --color-bg: #ddd;
-    --color-text: #1a1e24;
-    --color-text-subtle: #D76D77;
-
-    padding: 0; margin: 0;
+body {
+    padding: 0;
+    margin: 0;
+    background: #1a1e24;
     width: 100%;
     min-height: 100vh;
-    display: -webkit-box; display: -ms-flexbox; display: flex;
-    -webkit-box-align: center; -ms-flex-align: center; align-items: center;
-    -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center;
-    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
- :root {
+#termynal {
+    font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
+}
+
+#termynal span {
+    color: white;
+}
+
+:root {
     --color-bg: #252a33;
     --color-text: #eee;
     --color-text-subtle: #a2a2a2;
@@ -30,14 +36,14 @@
     max-width: 60%;
     background: var(--color-bg);
     color: var(--color-text);
-    margin: 0 auto;
+    margin: 100px auto;
     font-size: 18px;
     font-family: 'Fira Mono', Consolas, Menlo, Monaco, 'Courier New', Courier, monospace;
     border-radius: 4px;
     padding: 75px 45px 35px;
     position: relative;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 [data-termynal]:before {
@@ -52,11 +58,11 @@
     /* A little hack to display the window buttons in one pseudo element. */
     background: #d9515d;
     -webkit-box-shadow: 25px 0 0 #f4c025, 50px 0 0 #3ec930;
-            box-shadow: 25px 0 0 #f4c025, 50px 0 0 #3ec930;
+    box-shadow: 25px 0 0 #f4c025, 50px 0 0 #3ec930;
 }
 
 [data-termynal]:after {
-    content: 'bash';
+    content: 'First Problem'; /* 터미널 이름 */
     position: absolute;
     color: var(--color-text-subtle);
     top: 5px;
@@ -83,9 +89,10 @@
     color: var(--color-text-subtle);
 }
 
-[data-ty="input"]:before {
-    content: '$';
+[data-ty-prompt]::before {
+    padding-bottom: 5px;
 }
+
 
 [data-ty][data-ty-prompt]:before {
     content: attr(data-ty-prompt);
@@ -96,7 +103,7 @@
     font-family: monospace;
     margin-left: 0.5em;
     -webkit-animation: blink 1s infinite;
-            animation: blink 1s infinite;
+    animation: blink 1s infinite;
 }
 
 

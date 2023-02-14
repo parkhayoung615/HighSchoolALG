@@ -30,7 +30,22 @@
         </header>
         <!-- header 영역 끝 -->
 
-        <div id="termynal"></div>
+        <div id="termynal" data-termynal>
+            <span data-ty="input" data-ty-prompt="1">High School Algorithm Camp &nbsp; 2023 Jan 30 - Feb 12</span>
+            <span data-ty data-ty-prompt="2">Successfully installed spacy</span>
+            <span data-ty data-ty-prompt="3"></span>
+            <span data-ty="input" data-ty-prompt="4">python -m spacy download en</span>
+            <span data-ty data-ty-prompt="5">Installed model 'en'</span>
+            <span data-ty data-ty-prompt="6"></span>
+            <span data-ty="input" data-ty-prompt="7">python</span>
+            <span data-ty="input" data-ty-prompt="8">import spacy</span>
+            <span data-ty="input" data-ty-prompt="9">nlp = spacy.load('en')</span>
+            <span data-ty="input" data-ty-prompt="10">doc = nlp(u'Hello world')</span>
+            <span data-ty="input" data-ty-prompt="11">print([(w.text, w.pos_) for w in doc])</span>
+            <span data-ty>[('Hello', 'INTJ'), ('world', 'NOUN')]</span>
+
+            <script src="./js/index.js" data-termynal-container="#termynal"></script>
+        </div>
 
         <!-- footer 영역 시작 -->
         <footer>
@@ -75,26 +90,6 @@
         <!-- footer 영역 끝 -->
 
     </div>
-    <script src="./js/algo.js"></script>
-    <script>
-      var termynal = new Termynal('#termynal', {
-        typeDelay: 40,
-        lineDelay: 700,
-        lineData: [
-          { type: 'input', prompt: '▲', value: 'npm uninstall react' },
-          { value: 'Are you sure you want to uninstall \'react\'?' },
-          { type: 'input',  typeDelay: 1000, prompt: '(y/n)', value: 'y' },
-          { type: 'progress', progressChar: '·' },
-          { value: 'Uninstalled \'react\'' },
-          { type: 'input', prompt:'▲', value: 'node' },
-          { type: 'input', prompt: '>', value: `Array(5).fill('🦄 ')` },
-          { value: `['🦄', '🦄', '🦄', '🦄', '🦄']` },
-          { type: 'input', prompt: '▲', value: 'cd ~/repos' },
-          { type: 'input', prompt: '▲ ~/repos', value: ' git checkout branch master' },
-          { type: 'input', prompt: '▲ ~/repos (master)', value: 'git commit -m \'Fix things\'' },
-        ]
-      });
-    </script>
 </body>
 
 </html>
