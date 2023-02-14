@@ -33,46 +33,57 @@
 
         <div class="slider-1">
             <div class="slides">
-                <div class="active"> <div id="termynal" data-termynal>
-                    <span data-ty="input" data-ty-prompt="1">W, N = map (int, input().split()) # 몸무게 W, 다이어트 N</span>
-                    <span data-ty data-ty-prompt="2"></span>
-                    <span data-ty="input" data-ty-prompt="3">for _ in range(N):</span>
-                    <span data-ty="input" data-ty-prompt="4"> &nbsp;&nbsp; c, e = map(int, input().split())</span>
-                    <span data-ty="input" data-ty-prompt="5"> &nbsp;&nbsp; if W >= 80:</span>
-                    <span data-ty="input" data-ty-prompt="6"> &nbsp;&nbsp;&nbsp;&nbsp;  if c < e:</span>
-                    <span data-ty="input" data-ty-prompt="7"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; W -= 1</span>
-                    <span data-ty="input" data-ty-prompt="8"> &nbsp;&nbsp; elif W <= 10:</span>
-                    <span data-ty="input" data-ty-prompt="9"> &nbsp;&nbsp;&nbsp;&nbsp;  if c > e:</span>
-                    <span data-ty="input" data-ty-prompt="10"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; W += 1</span>
-                    <span data-ty="input" data-ty-prompt="11"> &nbsp; else:</span>
-                    <span data-ty="input" data-ty-prompt="12"> &nbsp;&nbsp;&nbsp; if c < e:</span>
-                    <span data-ty="input" data-ty-prompt="13"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; W -= 1</span>
-                    <span data-ty="input" data-ty-prompt="14"> &nbsp;&nbsp;&nbsp; elif c > e:</span>
-                    <span data-ty="input" data-ty-prompt="15"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; W += 1</span>
-                    <span data-ty data-ty-prompt="16"></span>
-                    <span data-ty="input" data-ty-prompt="17">print(W)</span>
-                    <span data-ty>63</span>
-        
-                    
-                </div></div>
+                <div class="active">
+                    <div id="termynal" data-termynal>
+                        <span data-ty="input" data-ty-prompt="1">W, N = map (int, input().split()) # 몸무게 W, 다이어트
+                            N</span>
+                        <span data-ty data-ty-prompt="2"></span>
+                        <span data-ty="input" data-ty-prompt="3">for _ in range(N):</span>
+                        <span data-ty="input" data-ty-prompt="4"> &nbsp;&nbsp; c, e = map(int, input().split())</span>
+                        <span data-ty="input" data-ty-prompt="5"> &nbsp;&nbsp; if W >= 80:</span>
+                        <span data-ty="input" data-ty-prompt="6"> &nbsp;&nbsp;&nbsp;&nbsp; if c < e:</span>
+                                <span data-ty="input" data-ty-prompt="7"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; W
+                                    -= 1</span>
+                                <span data-ty="input" data-ty-prompt="8"> &nbsp;&nbsp; elif W <= 10:</span>
+                                        <span data-ty="input" data-ty-prompt="9"> &nbsp;&nbsp;&nbsp;&nbsp; if c >
+                                            e:</span>
+                                        <span data-ty="input" data-ty-prompt="10">
+                                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; W += 1</span>
+                                        <span data-ty="input" data-ty-prompt="11"> &nbsp; else:</span>
+                                        <span data-ty="input" data-ty-prompt="12"> &nbsp;&nbsp;&nbsp; if c < e:</span>
+                                                <span data-ty="input" data-ty-prompt="13">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; W -= 1</span>
+                                                <span data-ty="input" data-ty-prompt="14"> &nbsp;&nbsp;&nbsp; elif c >
+                                                    e:</span>
+                                                <span data-ty="input" data-ty-prompt="15">
+                                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; W += 1</span>
+                                                <span data-ty data-ty-prompt="16"></span>
+                                                <span data-ty="input" data-ty-prompt="17">print(W)</span>
+                                                <span data-ty>63</span>
 
-                <div> <div id="termynal" data-termynal2>
-                    <span data-ty="input" data-ty-prompt="1">N = int(input())</span>
-                    <span data-ty data-ty-prompt="2">time = 0</span>
-                    <span data-ty data-ty-prompt="3"></span>
-                    <span data-ty="input" data-ty-prompt="4"> for _ in range(N):</span>
-                    <span data-ty="input" data-ty-prompt="5"> &nbsp;&nbsp; t, w = map(int, input().split())</span>
-                    <span data-ty="input" data-ty-prompt="6"> &nbsp;&nbsp; if t < time:</span>
-                    <span data-ty="input" data-ty-prompt="7"> &nbsp;&nbsp;&nbsp;&nbsp; time += w</span>
-                    <span data-ty="input" data-ty-prompt="8"> &nbsp;&nbsp; else:</span>
-                    <span data-ty="input" data-ty-prompt="9"> &nbsp;&nbsp;&nbsp;&nbsp;  time = t</span>
-                    <span data-ty="input" data-ty-prompt="10"> &nbsp;&nbsp;&nbsp;&nbsp;time += w</span>
-                    <span data-ty data-ty-prompt="11"></span>
-                    <span data-ty="input" data-ty-prompt="12">print(time)</span>
-                    <span data-ty>8</span>
-        
-                    <script src="./js/index.js" data-termynal-container="#termynal"></script>
-                </div></div>
+
+                    </div>
+                </div>
+
+                <div>
+                    <div id="termynal" data-termynal2>
+                        <span data-ty="input" data-ty-prompt="1">N = int(input())</span>
+                        <span data-ty data-ty-prompt="2">time = 0</span>
+                        <span data-ty data-ty-prompt="3"></span>
+                        <span data-ty="input" data-ty-prompt="4"> for _ in range(N):</span>
+                        <span data-ty="input" data-ty-prompt="5"> &nbsp;&nbsp; t, w = map(int, input().split())</span>
+                        <span data-ty="input" data-ty-prompt="6"> &nbsp;&nbsp; if t < time:</span>
+                                <span data-ty="input" data-ty-prompt="7"> &nbsp;&nbsp;&nbsp;&nbsp; time += w</span>
+                                <span data-ty="input" data-ty-prompt="8"> &nbsp;&nbsp; else:</span>
+                                <span data-ty="input" data-ty-prompt="9"> &nbsp;&nbsp;&nbsp;&nbsp; time = t</span>
+                                <span data-ty="input" data-ty-prompt="10"> &nbsp;&nbsp;&nbsp;&nbsp;time += w</span>
+                                <span data-ty data-ty-prompt="11"></span>
+                                <span data-ty="input" data-ty-prompt="12">print(time)</span>
+                                <span data-ty>8</span>
+
+                                <script src="./js/index.js" data-termynal-container="#termynal"></script>
+                    </div>
+                </div>
             </div>
             <div class="page-btns">
                 <div class="active"></div>
