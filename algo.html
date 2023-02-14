@@ -31,19 +31,26 @@
         <!-- header 영역 끝 -->
 
         <div id="termynal" data-termynal>
-            <span data-ty="input" data-ty-prompt="1">High School Algorithm Camp &nbsp; 2023 Jan 30 - Feb 12</span>
-            <span data-ty data-ty-prompt="2">Successfully installed spacy</span>
-            <span data-ty data-ty-prompt="3"></span>
-            <span data-ty="input" data-ty-prompt="4">python -m spacy download en</span>
-            <span data-ty data-ty-prompt="5">Installed model 'en'</span>
-            <span data-ty data-ty-prompt="6"></span>
-            <span data-ty="input" data-ty-prompt="7">python</span>
-            <span data-ty="input" data-ty-prompt="8">import spacy</span>
-            <span data-ty="input" data-ty-prompt="9">nlp = spacy.load('en')</span>
-            <span data-ty="input" data-ty-prompt="10">doc = nlp(u'Hello world')</span>
-            <span data-ty="input" data-ty-prompt="11">print([(w.text, w.pos_) for w in doc])</span>
+            <span data-ty="input" data-ty-prompt="1">W, N = map (int, input().split()) # 몸무게 W, 다이어트 N</span>
+            <span data-ty data-ty-prompt="2"></span>
+            <span data-ty data-ty-prompt="3">for _ in range(N):</span>
+            <span data-ty="input" data-ty-prompt="4">c, e = map(int, input().split())</span>
+            <span data-ty data-ty-prompt="5">if W >= 80:</span>
+            <span data-ty data-ty-prompt="6">if c < e:</span>
+            <span data-ty="input" data-ty-prompt="7">W -= 1</span>
+            <span data-ty="input" data-ty-prompt="8">elif W <= 10:</span>
+            <span data-ty="input" data-ty-prompt="9">if c > e:</span>
+            <span data-ty="input" data-ty-prompt="10">W += 1</span>
+            <span data-ty="input" data-ty-prompt="11">else:</span>
+            <span data-ty="input" data-ty-prompt="12">if c < e:</span>
+            <span data-ty="input" data-ty-prompt="13">W -= 1</span>
+            <span data-ty="input" data-ty-prompt="14">elif c > e:</span>
+            <span data-ty="input" data-ty-prompt="15">W += 1</span>
+            <span data-ty data-ty-prompt="16"></span>
+            <span data-ty="input" data-ty-prompt="17">print(W)</span>
             <span data-ty>[('Hello', 'INTJ'), ('world', 'NOUN')]</span>
 
+            
             <script src="./js/index.js" data-termynal-container="#termynal"></script>
         </div>
 
