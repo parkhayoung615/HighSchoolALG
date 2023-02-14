@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Algorithm</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/algo.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Mono">
     <script src="https://kit.fontawesome.com/8ca5eadfef.js" crossorigin="anonymous"></script>
 </head>
 
@@ -27,6 +29,8 @@
             </div>
         </header>
         <!-- header 영역 끝 -->
+
+        <div id="termynal"></div>
 
         <!-- footer 영역 시작 -->
         <footer>
@@ -71,7 +75,26 @@
         <!-- footer 영역 끝 -->
 
     </div>
-    <script src="./js/index.js"></script>
+    <script src="./js/algo.js"></script>
+    <script>
+      var termynal = new Termynal('#termynal', {
+        typeDelay: 40,
+        lineDelay: 700,
+        lineData: [
+          { type: 'input', prompt: '▲', value: 'npm uninstall react' },
+          { value: 'Are you sure you want to uninstall \'react\'?' },
+          { type: 'input',  typeDelay: 1000, prompt: '(y/n)', value: 'y' },
+          { type: 'progress', progressChar: '·' },
+          { value: 'Uninstalled \'react\'' },
+          { type: 'input', prompt:'▲', value: 'node' },
+          { type: 'input', prompt: '>', value: `Array(5).fill('🦄 ')` },
+          { value: `['🦄', '🦄', '🦄', '🦄', '🦄']` },
+          { type: 'input', prompt: '▲', value: 'cd ~/repos' },
+          { type: 'input', prompt: '▲ ~/repos', value: ' git checkout branch master' },
+          { type: 'input', prompt: '▲ ~/repos (master)', value: 'git commit -m \'Fix things\'' },
+        ]
+      });
+    </script>
 </body>
 
 </html>
