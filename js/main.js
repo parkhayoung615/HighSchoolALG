@@ -55,7 +55,7 @@ setInterval(function () {
 
 
 
-
+/*
 let textInput = document.querySelector('.textInput');
 
 let lengthWOblank = document.querySelector('.lengthWOblank');
@@ -105,7 +105,7 @@ function byteCounter(text, blank = 0) {
     return byte
 }
 
-
+*/
 
 $(function () {
     $('.tabcontent > div').hide();
