@@ -1,4 +1,4 @@
-body {
+.slides {
     padding: 0;
     margin: 0;
     background: #1a1e24;
@@ -7,18 +7,44 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    height: 100%;
 }
 
 header a {
     color: rgb(230, 230, 230);
+}
+
+#algo-header {
+    position: relative;
+    backdrop-filter: #f1f1f1;
+    width: 100%;
+    height: 100px;
+}
+
+.algo-tit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 50px auto;
+}
+
+.tit {
+    font-size: 42px;
+    font-family: 'Noto Bb';
+}
+
+div.sub-tit {
+    font-family: 'Noto M';
+    color: rgb(56, 56, 56);
+    font-size: 20px;
+    line-height: 0.8;
+}
+
+span.sub-tit {
+    font-family: 'Noto T';
+    font-size: 12px;
 }
 
 #termynal {
@@ -176,6 +202,7 @@ header a {
 .slider-1 {
     height: 1000px;
     position:relative;
+    margin-top: 100px;
 }
 
 /* 슬라이더 1 - 페이지 버튼 */
