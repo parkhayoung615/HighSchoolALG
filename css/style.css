@@ -566,3 +566,17 @@ footer {
     text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
     line-height: 1.4;
 }
+
+
+
+/*
+@media all and (device-width:375px) and (device-width:1920px) {
+    header {
+        font-size: 2px;
+    }
+
+    .header-wrap {
+        width: 50%;
+    }
+}
+*/
