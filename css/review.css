@@ -6,13 +6,28 @@
 textarea {
     width: 100%;
     font-size: 14px;
-    height: 1500px;
     border: none;
     border-radius: 15px;
     resize: none;
     text-align: left;
     background-color: rgb(131, 131, 131);
-    padding-top: 30px;
+    padding-top: 50px;
+}
+
+#tab01 textarea {
+    height: 1200px;
+}
+
+#tab02 textarea {
+    height: 600px;
+}
+
+#tab04 textarea {
+    height: 720px;
+}
+
+#tab05 textarea {
+    height: 350px;
 }
 
 .title {
