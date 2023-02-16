@@ -6,12 +6,13 @@
 textarea {
     width: 100%;
     font-size: 14px;
-    height: 480px;
+    height: 1500px;
     border: none;
     border-radius: 15px;
     resize: none;
     text-align: left;
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(131, 131, 131);
+    padding-top: 30px;
 }
 
 .title {
