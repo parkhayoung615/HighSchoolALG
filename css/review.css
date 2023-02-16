@@ -99,7 +99,7 @@ span.sub-tit {
 }
 
 .tabnav li a.active:before {
-    background: #7ea21e;
+    background: #000000;
 }
 
 .tabnav li a.active {
@@ -120,7 +120,7 @@ span.sub-tit {
 .tabnav li a:hover,
 .tabnav li a.active {
     background: #fff;
-    color: #7ea21e;
+    color: #000000;
 }
 
 .tabcontent {
