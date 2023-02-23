@@ -15,6 +15,7 @@
   <a href="https://parkhayoung615.github.io/HighSchoolALG/">https://parkhayoung615.github.io/HighSchoolALG/</a>
   
   <h3>웹페이지 미리보기</h3>
-
+  <br>
+  <img width="80%" src="https://user-images.githubusercontent.com/80390048/220991598-0aadcc9f-247e-4d5d-bc0f-2675b95453c8.png">
   
 </div>
