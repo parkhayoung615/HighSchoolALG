@@ -13,4 +13,8 @@
   
   <h3>웹페이지 링크</h3>
   <a href="https://parkhayoung615.github.io/HighSchoolALG/">https://parkhayoung615.github.io/HighSchoolALG/</a>
+  
+  <h3>웹페이지 미리보기</h3>
+
+  
 </div>
